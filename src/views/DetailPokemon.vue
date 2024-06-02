@@ -61,11 +61,15 @@
       />
     </div>
     <PokemonChart :stats="pokemon.stats" class="my-4" />
-    <ul>
+    <!-- <ul>
       <li v-for="evolution in evolutionChain" :key="evolution.species.name">
         {{ evolution.species.name }}
       </li>
-    </ul>
+    </ul> -->
+    <div>
+      <h3 class="font-bold text-xl">Evolution chain</h3>
+      <p class="text-center animate-pulse text-lg mt-3">Coming soon...🕖</p>
+    </div>
   </div>
   <div v-else class="text-2xl text-center font-black">
     <div v-if="isFetching">
